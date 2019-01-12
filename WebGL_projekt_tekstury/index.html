@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>WebGL-tekstury</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+       
+    <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-2 col-md-offset-5"><h1 >Tekstury</h1></div>
+                    
+            </div>
+
+
+            <div class="row justify-content-md-center">
+                <div class="col-sm-1">
+                    <form novalidate>
+                            <div class="form-group">
+                                Osie obrotu:
+                                <br/>
+                                <input type="checkbox" class="form-check-input" id="rotateX"> rotacja X 
+                                <br/>
+                                <input type="checkbox" class="form-check-input" id="rotateY"> rotacja Y
+                                <br/>
+                                <input type="checkbox" class="form-check-input" id="rotateZ"> rotacja Z
+                                <br/>
+                                <button class="btn btn-success" onclick="runWebGL(); return false;">Start</button>
+                            </div>
+                        </form>
+                </div>
+				<div class="col-sm-2">
+                    <form novalidate>					
+                            <div class="form-group">
+                                Tekstury:
+								
+                                <br/>
+								<img src='C:/Users/FUJITSU/Desktop/WebGL_projekt_tekstury/cubetexture.png' style="width:100px;height:100px;"/>
+                                <input type="checkbox" class="form-check-input" id="texture1">
+																
+                                <br/>
+								<img src='C:/Users/FUJITSU/Desktop/WebGL_projekt_tekstury/cubetexture2.png' style="width:100px;height:100px;"/> 
+                                <input type="checkbox" class="form-check-input" id="texture2"> 
+                                <br/>
+								<img src='C:/Users/FUJITSU/Desktop/WebGL_projekt_tekstury/cubetexture3.png' style="width:100px;height:100px;"/>
+                                <input type="checkbox" class="form-check-input" id="texture3"> 
+                                <br/>
+                            </div>
+                        </form>
+                </div>
+
+                 <div class="col-sm-8">   
+                    <canvas id="glcanvas" width="500" height="300">
+                    Brak wsparcia dla elementu HTML5 typu canvas 
+                    </canvas>
+                    <br/>
+                </div>
+        </div>
+</div>
+
+   <script src="js/main.js"></script>
+   <script src="js/matrix.js"></script>
+
+</body>
+</html>
